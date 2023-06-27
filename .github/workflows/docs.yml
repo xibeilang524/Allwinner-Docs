@@ -32,9 +32,12 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-
+        
       - name: Build documentation site
-        run: pnpm docs:release
+        run: pnpm build
+        
+      - name: Build documentation site
+        run: pnpm docs:build
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.2.0
