@@ -33,4 +33,10 @@ export default defineConfig({
       reporter: ['clover', 'json', 'lcov', 'text'],
     },
   },
+  theme: defaultTheme({
+    docsRepo: 'https://github.com/100askTeam/Allwinner-Docs',
+    docsBranch: 'master',
+    docsDir: 'docs',
+    editLinkPattern: ':repo/-/edit/:branch/:path',
+  }),
 })

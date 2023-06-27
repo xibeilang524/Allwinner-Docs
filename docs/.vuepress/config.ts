@@ -47,8 +47,12 @@ export default defineUserConfig({
   // configure default theme
   theme: defaultTheme({
     logo: '/images/hero.png',
-    repo: 'vuepress/vuepress-next',
+    docsRepo: 'https://github.com/100askTeam/Allwinner-Docs',
+    docsBranch: 'master',
     docsDir: 'docs',
+    editLinkPattern: ':repo/-/edit/:branch/:path',
+    //repo: '',
+    //docsDir: 'docs',
     sidebarDepth: 0,
     // theme-level locales config
     locales: {
@@ -109,6 +113,9 @@ export default defineUserConfig({
     },
   }),
 
+
+
+
   // configure markdown
   markdown: {
     importCode: {
@@ -120,11 +127,11 @@ export default defineUserConfig({
   // use plugins
   plugins: [
     docsearchPlugin({
-      appId: '',
-      apiKey: '',
-      indexName: '',
+      appId: '34YFD9IUQ2',
+      apiKey: '9a9058b8655746634e01071411c366b8',
+      indexName: 'vuepress',
       searchParameters: {
-        facetFilters: [''],
+        facetFilters: ['tags:v2'],
       },
       locales: {
         '/': {

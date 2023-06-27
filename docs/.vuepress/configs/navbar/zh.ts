@@ -3,36 +3,39 @@ import { version } from '../meta.js'
 
 export const navbarZh: NavbarConfig = [
   {
-    text: '应用开发',
+    text: '嵌入式基础',
     link: '/'
   },
   {
+    text: '应用开发',
+    link: '/Application/'
+  },
+  {
     text: '系统开发',
-    link: '/advanced/'
+    link: '/System/'
   },
   {
     text: '驱动开发',
-    link: '/reference/plugin/back-to-top.md'
+    link: '/Devicedriver/'
   },
   {
     text: '专题应用',
-    link: '/advanced/cookbook/'
+    link: '/Special/'
   },
   {
     text: `全志系列`,
     children: [
       {
-        text: '更新日志',
-        // link: 'https://github.com/vuepress/vuepress-next/blob/main/CHANGELOG.md',
+        text: 'T113-Pro开发板',
         link: '/advanced/cookbook/',
       },
       {
-        text: 'v1.x',
-        link: 'https://v1.vuepress.vuejs.org/',
+        text: 'V853开发板',
+        link: '/advanced/cookbook/',
       },
       {
-        text: 'v0.x',
-        link: 'https://v0.vuepress.vuejs.org/',
+        text: 'R818开发板',
+        link: '/advanced/cookbook/',
       },
     ],
   },

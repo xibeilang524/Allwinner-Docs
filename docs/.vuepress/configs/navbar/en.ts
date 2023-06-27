@@ -3,8 +3,12 @@ import { version } from '../meta.js'
 
 export const navbarEn: NavbarConfig = [
   {
-    text: 'Apply',
+    text: 'Base',
     link: '/en/'
+  },
+  {
+    text: 'Application',
+    link: '/en/Application/01_FramebufferAPP.md'
   },
   {
     text: 'System',
